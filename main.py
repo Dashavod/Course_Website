@@ -42,7 +42,8 @@ class DBRepository:
 
     def __init__(self, table = 'Quiz'):
         client = MongoClient(
-            "mongodb+srv://root:nMoiWNI9fZAvAEf2@cluster0.hif69ym.mongodb.net/?retryWrites=true&w=majority")
+            "mongodb+srv://root:nMoiWNI9fZAvAEf2@cluster0.hif69ym.mongodb.net/?retryWrites=true&w=majority",
+            connectTimeoutMS=30000, socketTimeoutMS=None, socketKeepAlive=True, connect=False, maxPoolsize=1)
         self.db = client.get_database('Train_Bot')
         self.table = self.db[table]
 
