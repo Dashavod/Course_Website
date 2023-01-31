@@ -1,0 +1,5 @@
+pytesseract~=0.3.10
+pillow~=9.4.0
+googletrans~=4.0.0rc1
+flask~=2.2.2
+pymongo~=3.12.0
