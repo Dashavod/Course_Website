@@ -69,3 +69,7 @@ def submit():
     data["date"] = datetime.now()
     db.insert(data)
     return redirect('/thankyou.html')
+
+
+if __name__ == '__main__':
+    app.run()
